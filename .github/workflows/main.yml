@@ -20,7 +20,7 @@ jobs:
               with:
                   node-version: 14.x
             - name: yarn ci
-              run: yarn ci
+              run: yarn install --frozen-lockfile
             - name: test
               run: yarn test
             - name: format
